@@ -31,7 +31,7 @@ export const Footer = () => {
         </div>
         {/* mini footer */}
         <div className='py-3 text-center'>
-            <p>© 2023 Qligence All Rights Reserved. Desinged & Developed By BARTHOLOMEW</p>
+            <p>© 2023 BARTHOLOMEW All Rights Reserved. Desinged & Developed By BARTHOLOMEW</p>
         </div>
     </div>
   )
