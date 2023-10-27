@@ -25,13 +25,13 @@ export const Footer = () => {
                 {/* location */}
                 <div className='my-5 flex flex-col items-center pt-3'>
                     <p className='flex items-center'><BsFillTelephoneFill className='mr-2 text-primary'/> <span>+880 8080 8080</span></p>
-                    <p className='flex items-center'><MdEmail className='mr-2 text-primary'/> <span>joseph@bartholomewdevelopment.com</span></p>
+                    <p className='flex items-center'><MdEmail className='mr-2 text-primary'/> <a href='mailto:joseph@bartholomewdevelopment.com'>joseph@bartholomewdevelopment.com</a></p>
                 </div>
             </div>
         </div>
         {/* mini footer */}
         <div className='py-3 text-center'>
-            <p>© 2023 BARTHOLOMEW All Rights Reserved. Desinged & Developed By BARTHOLOMEW</p>
+            <p className='px-2'>© 2023 BARTHOLOMEW All Rights Reserved. Desinged & Developed By BARTHOLOMEW</p>
         </div>
     </div>
   )
