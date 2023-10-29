@@ -1,20 +1,22 @@
+import emailjs from "@emailjs/browser"
+import { Result } from "postcss"
 import React from 'react'
+import toast from "react-hot-toast"
 
 const Banner = () => {
 
     const handleSendMessage=(e)=>{
         e.preventDefault()
-        const form = e.target;
-        const name = form.name.value;
-        const email= form.email.value;
-        const number=form.number.value;
-        const message=form.message.value;
-        console.log({
-            name,
-            email,
-            number,
-            message
+        emailjs.sendForm("service_3zbggaq","template_kap1494",e.target,"0-W8xw21Q1_C79BP1")
+        .then(result=>{
+            if(result.text==="OK"){
+                toast.success("Successfully email send to Bartholomew Development LLC")
+                e.target.reset()
+            }
+        },(error)=>{
+            console.log(error.text)
         })
+        
     }
   return (
     <div className='banner min-h-[90vh] flex items-center overflow-hidden'>
@@ -32,7 +34,7 @@ const Banner = () => {
                     <form onSubmit={handleSendMessage}>
                         <input required name='name' className='w-full my-4 py-2 border border-gray/40 px-3' type="text" placeholder='Full Name' />
                         <input required name='email' className='w-full my-4 py-2 border border-gray/40 px-3' type="email" placeholder='Email' />
-                        <input required name='number' className='w-full my-4 py-2 border border-gray/40 px-3' type="number" placeholder='Phone' />
+                        <input required name='phone' className='w-full my-4 py-2 border border-gray/40 px-3' type="number" placeholder='Phone' />
                         <input required name='message' className='w-full my-4 py-2 border border-gray/40 px-3' type="text" placeholder='Comments or Questions?' />
                         <button type='submit' className='py-2 bg-primary text-white border-primary border hover:text-primary hover:bg-white rounded-sm px-6 shadow-lg text-[16px]'>Send Message</button>
                     </form>
