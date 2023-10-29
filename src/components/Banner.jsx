@@ -10,7 +10,7 @@ const Banner = () => {
         emailjs.sendForm("service_3zbggaq","template_kap1494",e.target,"0-W8xw21Q1_C79BP1")
         .then(result=>{
             if(result.text==="OK"){
-                toast.success("Successfully email send to Bartholomew Development LLC")
+                toast.success("Successfully sent an email to Bartholomew Development LLC")
                 e.target.reset()
             }
         },(error)=>{
