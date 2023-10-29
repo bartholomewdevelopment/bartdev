@@ -15,20 +15,18 @@ export const Portfolio = () => {
         {/* projects */}
         <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
             {/* project */}
-            <div className='min-h-[440px] bg-white rounded-lg p-4'>
+            <div data-aos="fade-right" data-aos-duration="1000" className='min-h-[380px] bg-white rounded-lg p-4'>
                 <img className='shadow-md border border-gray/40 rounded-lg w-full h-[250px]' src={img2} alt="" />
                 <div className='py-4'>
-                    <h2 className='text-xl font-semibold'>Simplifying athletic management with real-time scheduling, stats, and more.</h2>
-                    <p className='mb-4'>Discover the beauty of our farm and the bounty it brings. Explore our sustainable practices, fresh produce, and the rural charm that defines our agricultural haven. Join us on a journey to reconnect with nature and savor the flavors of farm-fresh goodness.</p>
+                    <h2 className='text-xl font-semibold mb-5'>Simplifying athletic management with real-time scheduling, stats, and more.</h2>
                     <a target='_blanck' href='http://overtimeam.com' className='py-2  bg-primary text-white border-primary border hover:text-primary hover:bg-white rounded-sm px-6 shadow-lg text-[16px]'>Visit Website</a>
                 </div>
             </div>
             {/* project */}
-            <div className='min-h-[440px] bg-white rounded-lg p-4'>
+            <div data-aos="fade-left" data-aos-duration="1000" className='min-h-[380px] bg-white rounded-lg p-4'>
                 <img className='shadow-md border border-gray/40 rounded-lg w-full h-[250px]' src={img1} alt="" />
                 <div className='py-4'>
-                    <h2 className='text-xl font-semibold'>Revolutionizing agricultural operations with data-driven insights.</h2>
-                    <p className='mb-4'>Discover the beauty of our farm and the bounty it brings. Explore our sustainable practices, fresh produce, and the rural charm that defines our agricultural haven. Join us on a journey to reconnect with nature and savor the flavors of farm-fresh goodness.</p>
+                    <h2 className='text-xl font-semibold mb-5'>Revolutionizing agricultural operations with data-driven insights.</h2>
                     <a target='_blanck' href='http://farmssystems.com' className='py-2  bg-primary text-white border-primary border hover:text-primary hover:bg-white rounded-sm px-6 shadow-lg text-[16px]'>Visit Website</a>
                 </div>
             </div>
