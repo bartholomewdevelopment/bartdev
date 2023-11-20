@@ -13,13 +13,10 @@ export const Footer = () => {
             <div className='w-[90%] xl:w-[1200px] mx-auto flex flex-col justify-center items-center'>
                 {/* social icons */}
                 <div className='flex'>
-                    <a className='w-[45px] h-[45px] bg-white rounded-full flex justify-center items-center mx-3' target='_blank' href="https://www.facebook.com/profile.php?id=100092204199645">
+                    <a className='w-[45px] h-[45px] bg-white rounded-full flex justify-center items-center mx-3' target='_blank' href="https://www.facebook.com/people/Bartholomew-Development/61551365503922/">
                         <FaFacebookF className='text-primary text-2xl'/>
                     </a>
-                    <a className='w-[45px] h-[45px] bg-white rounded-full flex justify-center items-center mx-3' target='_blank' href="">
-                        <AiOutlineTwitter className='text-primary text-2xl'/>
-                    </a>
-                    <a className='w-[45px] h-[45px] bg-white rounded-full flex justify-center items-center mx-3' target='_blank' href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2Fartifconnect%2F%3Ffbclid%3DIwAR0AhfiOi_rdWoCkFg1xPvZkl0k7z0xROysqoTX9RPGlFyxlIlOn8BrxukI&h=AT3Wp0WJt6tsLWLiG9k4i0Zboy4Zg7-m4YHlW4hcjwFeOYw98g2NuB-uH4PHiJFqQLsA-I6BwLqy3D9tt0EgdqqcoOtoYrYLBSZIgre-JyBPlTg3H1ZsGBDR-aWpAKp_IoLdTA">
+                    <a className='w-[45px] h-[45px] bg-white rounded-full flex justify-center items-center mx-3' target='_blank' href="https://www.linkedin.com/company/bartholomew-development/about/">
                         <BiLogoLinkedin className='text-primary text-2xl'/>
                     </a>
                 </div>
