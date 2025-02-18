@@ -35,14 +35,14 @@ const Footer = () => {
             <BsFillTelephoneFill className="mr-2 text-[#FE6A61]" /> 
             <span>740-688-8251</span>
           </p>
-          <p className="flex items-center font-nexa-bold break-words">
+          <p className="flex items-center font-nexa-bold break-words text-sm md:text-lg">
             <MdEmail className="mr-2 text-[#FE6A61]" /> 
             <a href="mailto:joseph@bartholomewdevelopment.com" className="hover:text-[#FE6A61] transition-all duration-300">
               joseph@bartholomewdevelopment.com
             </a>
           </p>
         </div>
-      </div>
+      </div> {/* ✅ Closing div added here to fix layout */}
 
       {/* Mini Footer */}
       <div className="py-3 text-center text-black font-nexa-bold text-sm mt-4">
