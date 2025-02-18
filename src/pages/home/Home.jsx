@@ -1,8 +1,10 @@
 import Banner from "../../components/Banner";
 import { Services } from "../../components/Services";
-import { Footer } from "../shared/Footer";
-import { Toaster } from "react-hot-toast";
 import { Portfolio } from "../../components/Portfolio";
+import CallToAction from "../../components/CallToAction";
+import Testimonials from "../../components/Testimonials";
+import FAQ from "../../components/FAQ";
+import PricingTable from "../../components/PricingTable";
 
 export const Home = () => {
   return (
@@ -10,8 +12,12 @@ export const Home = () => {
       <Banner />
       <Portfolio />
       <Services />
-      <Footer />
-      <Toaster />
+      <CallToAction />
+      <Testimonials />
+      <FAQ />
+      <PricingTable />
     </div>
   );
 };
+
+export default Home;

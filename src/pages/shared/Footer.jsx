@@ -4,7 +4,7 @@ import { BiLogoLinkedin } from "react-icons/bi"
 import { BsFillTelephoneFill } from "react-icons/bs"
 import { MdEmail } from "react-icons/md"
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <div className="bg-white shadow-xl">
         <div className='h-[90px] w-[95%] md:w-[90%] xl:w-[1200px] mx-auto flex justify-between items-center'>
@@ -13,6 +13,7 @@ export const Footer = () => {
                 <a 
                     className='w-[45px] h-[45px] bg-[#FE6A61] rounded-full flex justify-center items-center mx-3 hover:opacity-80 transition-all duration-300' 
                     target='_blank' 
+                    rel="noopener noreferrer"
                     href="https://www.facebook.com/people/Bartholomew-Development/61551365503922/"
                 >
                     <FaFacebookF className='text-white text-2xl'/>
@@ -20,6 +21,7 @@ export const Footer = () => {
                 <a 
                     className='w-[45px] h-[45px] bg-[#FE6A61] rounded-full flex justify-center items-center mx-3 hover:opacity-80 transition-all duration-300' 
                     target='_blank' 
+                    rel="noopener noreferrer"
                     href="https://www.linkedin.com/company/bartholomew-development/about/"
                 >
                     <BiLogoLinkedin className='text-white text-2xl'/>
@@ -48,3 +50,5 @@ export const Footer = () => {
     </div>
   )
 }
+
+export default Footer;

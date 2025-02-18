@@ -1,12 +1,17 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import { Header } from '../pages/shared/Header'
+import { Outlet } from "react-router-dom";
+import Header from "../pages/shared/Header";
+import Footer from "../pages/shared/Footer";
 
-export const RootLayout = () => {
+function RootLayout() {
   return (
     <div>
-        <Header/>
-        <Outlet/>
+      <Header />
+      <main>
+        <Outlet /> {/* Renders the current page here */}
+      </main>
+      <Footer />
     </div>
-  )
+  );
 }
+
+export default RootLayout;

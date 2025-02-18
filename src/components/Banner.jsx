@@ -23,7 +23,7 @@ const Banner = () => {
 
   return (
     <div 
-      className="relative min-h-[70vh] flex items-center overflow-hidden bg-cover bg-center"
+      className="relative min-h-[75vh] flex items-center overflow-hidden bg-cover bg-center"
       style={{ backgroundImage: `url(${banner})` }}
     >
       {/* Gradient Overlay */}

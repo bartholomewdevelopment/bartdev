@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Nexa:wght@700&display=swap');
 
 @layer base {
   .font-nexa-bold {
-    font-family: 'Nexa', sans-serif;
+    font-family: 'Poppins', sans-serif; /* Alternative to Nexa */
     font-weight: 700;
   }
 }
+
 
 body{
   margin: 0%;
