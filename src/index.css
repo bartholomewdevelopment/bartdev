@@ -10,6 +10,14 @@
     font-weight: 700;
   }
 }
+@font-face {
+  font-family: 'Nexa';
+  src: url('./assets/fonts/Nexa-Bold.woff2') format('woff2'),
+       url('./assets/fonts/Nexa-Bold.woff') format('woff'),
+       url('./assets/fonts/Nexa-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 
 
 body{
