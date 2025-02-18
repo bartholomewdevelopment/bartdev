@@ -23,7 +23,7 @@ const Banner = () => {
 
   return (
     <div 
-      className="relative min-h-[65vh] flex items-center overflow-hidden bg-cover bg-center"
+      className="relative min-h-[70vh] flex items-center overflow-hidden bg-cover bg-center"
       style={{ backgroundImage: `url(${banner})` }}
     >
       {/* Gradient Overlay */}
@@ -36,15 +36,16 @@ const Banner = () => {
           data-aos-duration="3000"
           className="w-[90%] md:w-[50%] mx-auto text-white my-10 md:m-0"
         >
-          <h4 className="text-2xl md:text-3xl font-semibold mb-2">Software Development</h4>
-          <h1 className="text-[36px] md:text-[54px] font-bold">
-            Bartholomew Development presents Overtime Athletic Management.
+          <h4 className="text-2xl md:text-3xl font-nexa-bold mb-2">Software Development</h4>
+          <h1 className="text-[36px] md:text-[54px] font-nexa-bold">
+            Bartholomew Development presents Overtime Athletic Management
           </h1>
-          <p>
+          <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
             Say Goodbye to Fragmented Athletic Management. Try our beta and experience a unified
             platform that streamlines registration, scheduling, and more. Designed for Athletic
             Directors, by those who understand the game.
           </p>
+
           <a href="mailto:joseph@bartholomewdevelopment.com">
             <button className="py-3 mt-6 bg-white text-[#FE6A61] rounded-lg px-6 shadow-lg text-[20px]">
               Get A Quote
@@ -59,8 +60,8 @@ const Banner = () => {
           className="md:w-[50%] flex justify-center my-10 md:m-0"
         >
           <div className="w-[90%] md:w-[60%] bg-white p-5 rounded-2xl">
-            <h1 className="text-2xl font-bold">Sign up for Discounted Beta Testing</h1>
-            <p className="text-gray text-sm">
+            <h1 className="text-[36px] md:text-[28px] font-nexa-bold">Sign up for Discounted Beta Testing</h1>
+            <p className="text-lg md:text-xl text-gray-200 leading-relaxed">
               Elevate your athletic department's performance and streamline operations with Overtime
               Athletic Management. Sign up for our beta test today and secure a special discounted
               rate!

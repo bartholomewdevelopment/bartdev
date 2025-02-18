@@ -8,7 +8,7 @@ export const Header = () => {
             <img className='w-[180px] md:w-[200px] xl:w-[220px]' src={logo} alt="Logo" />
             <div>
               <a href="mailto:joseph@bartholomewdevelopment.com">
-                <button className='py-2 text-primary border-primary border hover:text-white hover:bg-primary rounded-lg px-6 shadow-lg text-[16px]'>
+                <button className='py-2 text-[#FE6A61] border-[#FE6A61] border hover:text-white hover:bg-[#FE6A61] rounded-lg px-6 shadow-lg text-[16px]'>
                   Get A Quote
                 </button>
               </a>
