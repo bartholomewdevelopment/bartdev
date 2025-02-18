@@ -58,7 +58,7 @@ function IdeaSprint() {
 
     if (fileName) {
       const link = document.createElement('a');
-      link.href = `/Assets/Downloads/${fileName}`;
+      link.href = `src/assets/downloads/${fileName}`;
       link.download = fileName;
       document.body.appendChild(link);
       link.click();
