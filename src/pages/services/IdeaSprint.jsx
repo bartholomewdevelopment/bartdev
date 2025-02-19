@@ -12,15 +12,21 @@ function IdeaSprint() {
   const address = "7 Spruce St, Gallipolis, OH 45631";
   const apiKey = "AIzaSyBuPUUWFtmeRc4jD_SOABYSWLUdxi6NvV8";
 
+  // Array of upcoming event dates
+  const upcomingEvents = [
+    new Date('2025-03-18T09:00:00'), // March 18, 9am
+    new Date('2025-03-20T09:00:00')  // March 20, 9am
+  ];
+
   // Calculate countdown to next event
   useEffect(() => {
-    const eventDate = new Date();
-    eventDate.setDate(eventDate.getDate() + ((14 - eventDate.getDay()) % 14 || 14)); // Next event in 2 weeks
-    eventDate.setHours(18, 0, 0); // 6:00 PM event time
+    const now = new Date();
+    // Find the next event that is in the future
+    const nextEvent = upcomingEvents.find(event => event > now) || upcomingEvents[0]; // If no future event, loop back to first
 
     const updateCountdown = () => {
-      const now = new Date();
-      const diff = eventDate - now;
+      const current = new Date();
+      const diff = nextEvent - current;
       if (diff <= 0) {
         setCountdown("Happening Now!");
         return;
@@ -85,7 +91,7 @@ function IdeaSprint() {
             <span className="text-lg bg-white text-[#FE6A61] px-4 py-2 rounded-full shadow-lg font-bold animate-pulse">
               Next Event: <span dangerouslySetInnerHTML={{ __html: countdown.replace(/d|h|m/, (match) => ` <span class="text-red-500">${match}</span>`) }} />
             </span>
-            <a href="https://your-signup-link.com" aria-label="Reserve your spot for the next Idea Sprint event">
+            <a href="https://calendly.com/joseph-bartholomewdevelopment/idea-sprint" aria-label="Reserve your spot for the next Idea Sprint event" target="_blank" rel="noopener noreferrer">
               <button className="bg-white text-[#FE6A61] px-6 py-3 rounded-lg text-lg font-bold hover:bg-gray-200 transition-all hover:shadow-lg">
                 Reserve Your Spot
               </button>
@@ -245,7 +251,7 @@ function IdeaSprint() {
 
       {/* Signup CTA */}
       <div className="text-center py-12">
-        <a href="https://your-signup-link.com" aria-label="Sign up for Idea Sprint">
+        <a href="https://calendly.com/joseph-bartholomewdevelopment/idea-sprint" aria-label="Sign up for Idea Sprint" target="_blank" rel="noopener noreferrer">
           <button className="bg-[#FE6A61] text-white px-6 py-3 rounded-lg text-lg font-bold hover:bg-[#d85b52] transition-all hover:shadow-xl transform hover:scale-105">
             Reserve Your Spot
           </button>
