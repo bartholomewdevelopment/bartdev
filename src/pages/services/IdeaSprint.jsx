@@ -49,17 +49,17 @@ function IdeaSprint() {
 
   // Function to handle file download
   const handleDownload = (phaseNumber) => {
-    const fileName = {
-      1: "Phase 1 - Month 1.pdf",
-      2: "Phase 2 - Month 2.pdf",
-      3: "Phase 3 - Month 3.pdf",
-      4: "Phase 4 - Month 4.pdf"
+    const fileUrl = {
+      1: "https://raw.githubusercontent.com/bartholomewdevelopment/bartdev/main/resources/Phase%201%20-%20Month%201.pdf",
+      2: "https://raw.githubusercontent.com/bartholomewdevelopment/bartdev/main/resources/Phase%202%20-%20Month%202.pdf",
+      3: "https://raw.githubusercontent.com/bartholomewdevelopment/bartdev/main/resources/Phase%203%20-%20Month%203.pdf",
+      4: "https://raw.githubusercontent.com/bartholomewdevelopment/bartdev/main/resources/Phase%204%20-%20Month%204.pdf"
     }[phaseNumber];
-
-    if (fileName) {
+  
+    if (fileUrl) {
       const link = document.createElement('a');
-      link.href = `src/assets/downloads/${fileName}`;
-      link.download = fileName;
+      link.href = fileUrl;
+      link.download = `Phase ${phaseNumber} - Month ${phaseNumber}.pdf`;
       document.body.appendChild(link);
       link.click();
       document.body.removeChild(link);
@@ -114,7 +114,7 @@ function IdeaSprint() {
           {
             icon: <Users size={40} className="mx-auto text-[#FE6A61]" />,
             title: "Who Can Join?",
-            details: ["Entrepreneurs in Gallipolis", "Startups & Early-Stage Founders"]
+            details: ["Entrepreneurs in Gallia County, OH and surrounding areas", "Startups & Early-Stage Founders"]
           }
         ].map((info, index) => (
           <div key={index} className="p-6 bg-gray-100 rounded-lg hover:shadow-lg transition-all">
