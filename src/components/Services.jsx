@@ -5,6 +5,7 @@ import { BiSolidBug } from "react-icons/bi";
 import { FaRocket, FaUsers, FaTools } from "react-icons/fa";
 import { SectionTitle } from '../pages/shared/SectionTitle';
 import { Link } from "react-router-dom";
+import mvpIcon from '../assets/3.png'; // Import the custom image
 
 export const Services = () => {
   return (
@@ -50,18 +51,18 @@ export const Services = () => {
             </div>
           </Link>
 
-          {/* MVP Development */}
-          <Link to="/services/mvp-development">
-            <div data-aos="fade-left" data-aos-duration="1000" className='p-6 shadow-sm h-[350px] bg-white rounded-2xl flex flex-col items-center justify-center cursor-pointer hover:shadow-lg transition-all'>
-              <div className='bg-[#FE6A61] w-[80px] h-[80px] rounded-full flex justify-center items-center'>
-                <FaRocket className='text-white text-4xl'/>
-              </div>
-              <h2 className='text-2xl font-nexa-bold text-[#FE6A61] mt-5'>MVP Development</h2>
-              <p className='text-center text-gray-700 text-lg md:text-xl leading-relaxed py-4'>
-                Launch your startup idea with a lean, scalable MVP.
-              </p>
-            </div>
-          </Link>
+{/* MVP Development */}
+<Link to="/services/mvp-development">
+  <div data-aos="fade-left" data-aos-duration="1000" className='p-6 shadow-sm h-[350px] bg-white rounded-2xl flex flex-col items-center justify-center cursor-pointer hover:shadow-lg transition-all'>
+    <div className='bg-[#FE6A61] w-[80px] h-[80px] rounded-full flex justify-center items-center'>
+      <img src={mvpIcon} alt="MVP Development" className='w-14 h-14 object-contain' />
+    </div>
+    <h2 className='text-2xl font-nexa-bold text-[#FE6A61] mt-5'>MVP Development</h2>
+    <p className='text-center text-gray-700 text-lg md:text-xl leading-relaxed py-4'>
+      Launch your startup idea with a lean, scalable MVP.
+    </p>
+  </div>
+</Link>
 
           {/* Ongoing Support */}
           <Link to="/services/ongoing-support">
@@ -103,19 +104,6 @@ export const Services = () => {
           </Link>
 
         </div>
-
-        {/* CTA Button to Pricing
-        <div className="text-center py-12">
-          <h2 className="text-3xl font-bold text-[#FE6A61]">Need a Service?</h2>
-          <p className="text-lg text-gray-600 mt-2">
-            Explore our pricing plans and get started today!
-          </p>
-          <Link to="/pricing">
-            <button className="mt-6 bg-[#FE6A61] text-white px-6 py-3 rounded-lg text-lg font-bold hover:bg-[#d85b52] transition-all">
-              View Pricing & Order Services
-            </button>
-          </Link>
-        </div> */}
 
     </div>
   );
