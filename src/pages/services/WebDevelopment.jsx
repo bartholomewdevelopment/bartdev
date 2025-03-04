@@ -22,22 +22,32 @@ function WebDevelopment() {
         <h2 className="text-3xl font-bold text-[#FE6A61] mb-4 text-center">Our Packages</h2>
         <div className="flex flex-col md:flex-row items-center justify-center gap-6">
           <div className="p-6 bg-gray-100 rounded-lg shadow-lg max-w-md w-full">
-            <h3 className="text-2xl font-bold text-[#FE6A61] mb-3">Simple Website</h3>
+            <h3 className="text-2xl font-bold text-[#FE6A61] mb-3">Small Project</h3>
             <p className="text-gray-700 mb-3">
               <strong>Price Range:</strong> $500 - $1,500
             </p>
             <p className="text-gray-700">
-              Ideal for <strong>small businesses, personal brands, and freelancers</strong>. These websites are perfect for establishing your online presence with essential features like contact forms, basic SEO, and responsive design.
+              Ideal for <strong>small businesses, personal brands, and freelancers</strong>. Perfect for portfolios, blogs, or landing pages with essential features like contact forms, basic SEO, and responsive design.
             </p>
           </div>
 
           <div className="p-6 bg-gray-100 rounded-lg shadow-lg max-w-md w-full">
-            <h3 className="text-2xl font-bold text-[#FE6A61] mb-3">Larger Website</h3>
+            <h3 className="text-2xl font-bold text-[#FE6A61] mb-3">Medium Project</h3>
             <p className="text-gray-700 mb-3">
-              <strong>Price Range:</strong> $2,000 - $5,000
+              <strong>Price Range:</strong> $1,500 - $3,500
             </p>
             <p className="text-gray-700">
-              Suited for <strong>medium-sized businesses and eCommerce startups</strong>. Includes advanced features like custom integrations, content management systems, and more sophisticated design and functionality.
+              Suited for <strong>small businesses with growth goals</strong>. Includes e-commerce, custom features, content management, and enhanced design for a robust online presence.
+            </p>
+          </div>
+
+          <div className="p-6 bg-gray-100 rounded-lg shadow-lg max-w-md w-full">
+            <h3 className="text-2xl font-bold text-[#FE6A61] mb-3">Large Project</h3>
+            <p className="text-gray-700 mb-3">
+              <strong>Price Range:</strong> $3,500 - $6,000
+            </p>
+            <p className="text-gray-700">
+              Designed for <strong>medium-sized businesses and complex needs</strong>. Features high-traffic support, custom integrations, advanced e-commerce, and sophisticated functionality.
             </p>
           </div>
         </div>

@@ -20,24 +20,44 @@ function SoftwareDevelopment() {
 
       <section className="mb-12">
         <h2 className="text-3xl font-bold text-[#FE6A61] mb-4 text-center">Our Packages</h2>
-        <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+        <div className="flex flex-col md:flex-row flex-wrap items-center justify-center gap-6">
           <div className="p-6 bg-gray-100 rounded-lg shadow-lg max-w-md w-full">
-            <h3 className="text-2xl font-bold text-[#FE6A61] mb-3">Small Software Project</h3>
+            <h3 className="text-2xl font-bold text-[#FE6A61] mb-3">Small Project</h3>
             <p className="text-gray-700 mb-3">
               <strong>Price Range:</strong> $5,000 - $10,000
             </p>
             <p className="text-gray-700">
-              Ideal for <strong>entrepreneurs and businesses needing automation tools</strong>. We focus on creating efficient, bespoke solutions to streamline your operations.
+              Ideal for <strong>entrepreneurs and small businesses</strong>. Perfect for simple utility apps or plugins to streamline operations with basic functionality.
             </p>
           </div>
 
           <div className="p-6 bg-gray-100 rounded-lg shadow-lg max-w-md w-full">
-            <h3 className="text-2xl font-bold text-[#FE6A61] mb-3">Medium Software Project</h3>
+            <h3 className="text-2xl font-bold text-[#FE6A61] mb-3">Medium Project</h3>
             <p className="text-gray-700 mb-3">
-              <strong>Price Range:</strong> $15,000 - $25,000
+              <strong>Price Range:</strong> $10,000 - $15,000
             </p>
             <p className="text-gray-700">
-              Suited for <strong>startups and growing businesses</strong>. This package offers more comprehensive solutions with scalability in mind, perfect for businesses expanding their capabilities.
+              Suited for <strong>startups and growing businesses</strong>. Offers standalone apps with moderate complexity and scalability for expanding needs.
+            </p>
+          </div>
+
+          <div className="p-6 bg-gray-100 rounded-lg shadow-lg max-w-md w-full">
+            <h3 className="text-2xl font-bold text-[#FE6A61] mb-3">Large Project</h3>
+            <p className="text-gray-700 mb-3">
+              <strong>Price Range:</strong> $15,000 - $50,000
+            </p>
+            <p className="text-gray-700">
+              Designed for <strong>established businesses with complex needs</strong>. Includes integrations, high user capacity, and advanced features.
+            </p>
+          </div>
+
+          <div className="p-6 bg-gray-100 rounded-lg shadow-lg max-w-md w-full">
+            <h3 className="text-2xl font-bold text-[#FE6A61] mb-3">Enterprise Project</h3>
+            <p className="text-gray-700 mb-3">
+              <strong>Price Range:</strong> $50,000+
+            </p>
+            <p className="text-gray-700">
+              Tailored for <strong>large-scale businesses and mission-critical systems</strong>. Features scalable, high-performance solutions with extensive customization.
             </p>
           </div>
         </div>
